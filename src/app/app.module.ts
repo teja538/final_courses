@@ -6,6 +6,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { HpyComponent } from './hpy/hpy.component';
+import { SahajComponent } from './sahaj/sahaj.component';
+import { VtpComponent } from './vtp/vtp.component';
+import { InfoformComponent } from './infoform/infoform.component';
+import { LoginComponent } from './login/login.component';
+import {ServedetailsService} from './servedetails.service';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,12 +23,18 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    HpyComponent,
+    SahajComponent,
+    VtpComponent,
+    InfoformComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +48,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatListModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [ServedetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
