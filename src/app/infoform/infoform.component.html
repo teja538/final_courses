@@ -1,1 +1,86 @@
-<p>infoform works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;padding: 15px;">Enter Course details</h1>
+    {{userform.value|json}}
+    <div class="card">
+      
+        <form #userform="ngForm" (ngSubmit)="onsubmit(course.value,text.value,startdate.value,enddate.value,time.value,teacher.value,link.value,password.value,userform)" novalidate>
+
+            <p>
+                <mat-form-field appearance="fill" style="width: 100%;">
+                    <mat-label>Course name</mat-label>
+                    <mat-select name="coursename" matInput placeholder="Course name" #course ngModel>
+                      <mat-option value="Online Happiness Program">Online Happiness Program</mat-option>
+                      <mat-option value="Sahaj samadhi meditation">Sahaj</mat-option>
+                      <mat-option value="Volunteer Training Program">VTP</mat-option>
+                      <mat-option value="option">Option</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field appearance="fill" style="width: 100%;">
+                  <mat-label>Image text</mat-label>
+                  <input type="text" name="text" matInput placeholder="Image text" #text ngModel autocomplete="off" required>
+                  <mat-error *ngIf="course.errors?.required">Username is required</mat-error>
+                </mat-form-field>
+            </p>
+
+            <div class="datetime">
+                <p>
+                    <mat-form-field appearance="fill" style="width: 100%;">
+                      <mat-label>starting date</mat-label>
+                      <input type="date" name="startdate" matInput placeholder="start-date" #startdate ngModel autocomplete="off" required>
+                      <mat-error *ngIf="startdate.errors?.required">startdate is required</mat-error>
+                    </mat-form-field>
+                </p>
+                <p class="endtime">
+                    <mat-form-field appearance="fill" style="width: 100%;">
+                      <mat-label>ending date</mat-label>
+                      <input type="date" name="enddate" matInput placeholder="End-date" #enddate ngModel autocomplete="off" required>
+                      <mat-error *ngIf="enddate.errors?.required">end-date is required</mat-error>
+                    </mat-form-field>
+                </p>
+
+            </div>
+
+            <mat-form-field appearance="fill" style="width: 100%;">
+                <mat-label>Time</mat-label>
+                <input type="text" name="time" matInput placeholder="Time" #time ngModel required>
+                <!-- <mat-error *ngIf="enddate.errors?.required">end-date is required</mat-error> -->
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" style="width: 100%;">
+                <mat-label>Teachers</mat-label>
+                <input type="text" name="teacher" matInput placeholder="Teacher" #teacher ngModel required>
+                <!-- <mat-error *ngIf="enddate.errors?.required">end-date is required</mat-error> -->
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" style="width: 100%;">
+                <mat-label>Reg Link</mat-label>
+                <input type="text" name="link" matInput placeholder="Reg Link" #link ngModel required>
+                <!-- <mat-error *ngIf="enddate.errors?.required">end-date is required</mat-error> -->
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" style="width: 100%;">
+                <mat-label>Password</mat-label>
+                <input type="password" name="userpassword" matInput placeholder="password" #password ngModel required>
+                <!-- <mat-error *ngIf="enddate.errors?.required">end-date is required</mat-error> -->
+            </mat-form-field>
+
+            <button [disabled]="userform.form.invalid" class="btn btn-primary" type="submit">Submit form</button>
+
+        </form>
+    </div>
+
+    
+
+</body>
+</html>
+

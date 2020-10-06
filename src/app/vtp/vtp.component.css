@@ -1,0 +1,126 @@
+.bg
+{
+    background-image:url("../../assets/img1/vtpbg1.jpg");
+    min-height:700px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    line-height: 62px;
+}
+
+.heading1 {
+    font-size: 62px;
+    font-weight: 400;
+    font-family: 'Questrial', sans-serif;
+}
+
+
+.prereq
+{
+    margin-top: 180px;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color:rgba(255, 166, 0, 0.288) ;
+    padding:2%;
+    color:silver
+}
+.upcoming
+{
+    padding: 6%;
+  
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.mid
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:55% ;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgba(0, 0, 0, 0.233);
+}
+.con:hover .mid{
+    opacity: 1;
+}
+.text {
+  
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+ 
+  }
+
+.ca
+{ 
+    height: 550px;
+    width: 300px;  
+}
+
+.bgcolor-primary 
+{
+    background-color:#4cc1bb3a!important;
+}
+
+.fixedbg
+{
+    background-image:url("../../assets/img1/vtp1.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(68, 0, 255, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgtext
+{
+    position: absolute;
+   left: 48%;
+  
+    color:brown;
+}
+
+@media all and (max-width:1169px)
+{
+    .imgtext
+    {
+        color: linen;
+    }
+    .fixedbg img
+    {
+        display: none;
+    }
+}
+
+.teacher
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.teacher img{
+   padding-bottom: 3%;
+}
+
