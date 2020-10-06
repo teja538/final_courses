@@ -1,1 +1,129 @@
-<p>hpy works!</p>
+<div class="bg">
+  <header >
+    <h1 class="H1" style="line-height: 30px;margin-top: 10px;">The</h1>
+    <h1 class="H1"><span style="color: yellow">H</span>appiness <span style="color:yellow">P</span>rogram</h1>
+    <!-- <p class="subhead" style="margin-left: 10%;">Making <span style="color: yellow;">LIFE</span> a Celebration</p> -->
+    <h1 class="fancy">Practical Wisdom for Improving the quality of <span style="color: yellow">LIFE</span></h1>      
+  </header>
+</div>
+
+<div class="sec" >
+  <div class="heading">Turn tears into smiles</div>
+    <div class="sec1">
+        <div >  
+            <img src="../assets/img1/sad1.jpg" height="300px" width="300px" style="border-radius: 50%;">
+            <h4 class="imgtxt">If you follow fun, <br>misery follows you.</h4>    
+        </div>
+        <div>
+          <img src="../assets/img1/timeforchange.jpg" height="300px" width="300px" style="border-radius: 50%;">
+          <h4 class="imgtxt">Time to Change</h4>    
+        </div>
+        <div >
+            <img src="../assets/img1/happy1.jpg" height="300px" width="300px" style="border-radius: 50%;">
+            <h4 class="imgtxt">If you follow knowledge,<br> happiness follows you.</h4>
+
+        </div>
+    </div>    
+</div>
+
+<div class="program" >
+  <div class="heading">Program Details</div>
+  <div class="row">
+    <div >
+      <img src="../../assets/img1/sread-icon2_0_0.png" alt="" height="50">
+      <h2 class="pdetails">Open to all elders above 18 years</h2>
+    </div>
+    <div>
+      <img src="../../assets/img1/time_0.png" alt=""height="50">
+      <h2 class="pdetails">Time per day: 2 hours</h2>
+    </div>
+
+    <div>
+      <img src="../../assets/img1/sread-icon1_0_0.png" alt=""height="50">
+      <h2 class="pdetails">Program duration: 3 days</h2>
+    </div>
+  </div>
+</div>
+
+<div class="three">
+    <div class="heading" style="color: aliceblue;">Upcoming Courses</div>
+
+    <div class="upcoming">
+      <div *ngFor="let cd of coursedet1;let i=index;" >
+<div class="ca card0">
+  <mat-card>
+    <div class="con">
+    <img mat-card-image src="{{images[i].img}}" style="height: 250px;" alt="Photo of a Shiba Inu" >
+    <div class="mid">
+      <div class="text">{{cd.Imagetext}}</div></div>
+    </div>
+    <mat-card-content>
+        <p ><b>Course Name :</b> <span style="font-family: 'Sriracha', cursive;font-size: 18px;">{{cd.coursename}}</span></p>
+        <p class="cdet"><b>Start Date :</b> {{cd.startdate|date:'mediumDate' }}  </p>
+        <p class="cdet"><b>End Date :</b> {{cd.enddate |date:'mediumDate' }}</p>
+        <p class="cdet"><b>Timmings :</b> {{cd.time}}</p>
+        <p class="cdet"><b>Teacher :</b> {{cd.teacher}}</p>
+    </mat-card-content>
+
+    <mat-card-actions style="display: flex;justify-content: space-around;">
+      <button mat-raised-button class="background-primary">REGISTER</button>
+      <button mat-raised-button class="background-primary">SHARE</button>
+      
+    </mat-card-actions>
+  </mat-card>
+</div>
+</div>
+    </div>
+
+</div>
+
+<h1 class="heading">About Trainer</h1>
+
+<div class="teacher" >
+
+  <div class="timg">
+    <img src="../assets/img1/boat.jpg" >
+    <!-- <img src="../../assets/img/70.png" height="110px" width="180px"> -->
+  </div>
+  
+  <div class="matter">
+    <p >
+      The Art of Living is more of a principle, a philosophy of living life to its fullest. It is more 
+      The Art of Living is more of a principle, a philosophy of living life to its fullest. It is more 
+      The Art of Living is more of a principle, a philosophy of living life to its fullest. It is more 
+      The Art of Living is more of a principle, a philosophy of living life to its fullest. It is more 
+      The Art of Living is more of a principle, a philosophy of living life to its fullest. It is more 
+      The Art of Living is more of a principle, a philosophy of living life to its fullest. It is more 
+    </p>
+  </div>
+</div>
+
+<mat-accordion  >
+  <h1 class="heading">I’m interested but I have some more questions…</h1>
+<mat-expansion-panel  *ngFor="let faq of FAQ , let i = index;"
+(opened)="setOpened(i)"
+(closed)="setClosed(i)">
+<mat-expansion-panel-header >
+<mat-panel-title>
+<b>{{faq.q}}</b>
+</mat-panel-title>
+</mat-expansion-panel-header>
+<p>{{faq.a}}</p>
+</mat-expansion-panel>
+<div *ngIf=show>
+  <mat-expansion-panel  *ngFor="let faq of FAQ1 , let i = index;"
+  (opened)="setOpened(i)"
+  (closed)="setClosed(i)">
+  <mat-expansion-panel-header >
+  <mat-panel-title>
+  <b>{{faq.q}}</b>
+  </mat-panel-title>
+  </mat-expansion-panel-header>
+  <p>{{faq.a}}</p>
+  </mat-expansion-panel>
+  </div>
+  <a type="button" (click)="show=true" *ngIf="!show" style="text-decoration: underline;;color: rgb(16, 145, 196);margin-left: 50%;"> show more</a>
+  <a type="button" (click)="show=false" *ngIf="show" style="text-decoration: underline;;color:  rgb(16, 145, 196);margin-left: 50%;"> show less</a>
+  
+
+</mat-accordion>

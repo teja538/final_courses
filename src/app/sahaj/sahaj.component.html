@@ -1,1 +1,95 @@
-<p>sahaj works!</p>
+
+<div class="bg"  >
+    <header >
+      <h1 class="H1"><span style="color: skyblue">S</span>ahaj</h1>
+      <h1 class="H1"><span style="color:skyblue">S</span>amadhi <span style="color: skyblue">M</span>editation</h1>
+      <h1 class="fancy">Experience deep <span style="color: skyblue">Inner Peace</span> anytime anywhere</h1>
+    </header>
+</div>
+
+<div class="quote">
+    <h2 class="quoteh">Its a effortless meditation technique which helps in clarity of mind and thoughs
+        and increase the level of self awareness</h2>
+</div>
+
+<div class="program">
+    <h1 class="heading">Program Details</h1>
+    <div class="row">
+      <div >
+        <img src="../../assets/img1/Group 19.svg" alt="" height="50">
+        <h2 class="pdetails">Open to all elders above 18 years</h2>
+      </div>
+      <div>
+        <img src="../../assets/img1/Group 16.svg" alt=""height="50">
+        <h2 class="pdetails">Time per day: 2 hours</h2>
+      </div>
+  
+      <div>
+        <img src="../../assets/img1/Group 20.svg" alt=""height="50">
+        <h2 class="pdetails">Program duration: 3 days</h2>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="courses">
+    <h1 style="text-align: center;padding-top:10px">Upcoming Courses</h1>
+    <div class="upcoming">
+      <div *ngFor="let cd of coursedet1;let i=index;" >
+        <div class="ca card0">
+          <mat-card>
+            <div class="con">
+            <img mat-card-image src="{{images[i%3].img}}" style="height: 250px;" alt="Photo of a Shiba Inu" >
+            <div class="mid">
+              <div class="text">{{cd.Imagetext}}</div></div>
+            </div>
+            <mat-card-content>
+                <h3 style="font-family: 'Sriracha', cursive;">{{cd.coursename}}</h3>
+                <p class="cdet">{{cd.startdate }} to {{cd.enddate }}</p>
+                <p class="cdet">{{cd.time}}</p>
+                <p class="cdet">{{cd.teacher}}</p>
+            </mat-card-content>
+    
+            <mat-card-actions style="display: flex;justify-content: space-around;">
+              <button mat-raised-button class="background-primary">REGISTER</button>
+              <button mat-raised-button class="background-primary">SHARE</button>
+              
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div> 
+  </div>
+  
+  
+    
+  <h1 style="text-align: center;padding: 3%;">About the Trainer</h1>
+  <div class="teacher">
+  
+    <div class="teacher1">
+        <div class="timg" >
+          <img src="../assets/img/ohp1.jpg" width="80%">
+        </div>
+  
+        <div class="ttext">
+          <p>kjadnfkjsfmbhjkshdkjfhdsiufhsnbbgsuh<br>ilsufdkjhskdhfisudfjb</p>
+          <p>kjadnfkjsfmbhjkshdkjfhdsiufhsnbbgsuh<br>ilsufdkjhskdhfisudfjb</p>
+          <p>kjadnfkjsfmbh<br>jkshdkjfhdsiufhsnbbgsuh<br>ilsufdkjhskdhfisudfjb</p>
+        </div>
+    </div>
+  </div>
+    
+  <mat-accordion >
+    <h1 style="text-align: center;padding-top:30px;padding-bottom:20px">I’m interested but I have some more questions…</h1>
+  <mat-expansion-panel  *ngFor="let faq of FAQ , let i = index;"
+  (opened)="setOpened(i)"
+  (closed)="setClosed(i)">
+  <mat-expansion-panel-header >
+  <mat-panel-title>
+  <b>{{faq.q}}</b>
+  </mat-panel-title>
+  </mat-expansion-panel-header>
+  <p>{{faq.a}}</p>
+  </mat-expansion-panel>
+  </mat-accordion>
+  

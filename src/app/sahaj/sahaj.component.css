@@ -1,0 +1,215 @@
+
+.heading{
+    font-family: 'Sriracha';
+    font-size: 24px;
+    padding: 40px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+.bg
+{
+    background-image:url("../../../src/assets/img1/mou.jpg");
+    min-height:550px;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.24);
+}
+.bg header{
+    color: aliceblue;
+    padding: 14px;
+    margin-left: 7%;
+    padding-top: 10%;
+}
+.bg header .H1{font-size: 60px;
+    line-height: 60px;
+    font-family: 'Questrial';}
+
+.bg header .fancy{
+    font-family: 'Caveat';
+    font-size: 40px;
+    line-height: 40px;
+}
+@media screen and (max-width:320px){
+    .bg header{
+        margin-left: 2%;
+    }
+}
+
+.quote
+{
+    background-image:url("../../../src/assets/img1/quo-removebg-preview.png");
+    min-height: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.quoteh{
+  /* text-align: center; */
+  width: 50%;
+  margin: -10px 20% 0 20%;
+  font-family:'Caveat';
+  line-height: 35px;
+  padding: 5%;
+  font-size: 42px;
+}
+@media screen and (max-width:1024px){
+
+    .quoteh{width: 92%;
+        font-size: 32px;
+        margin: 0 auto;}
+}
+
+
+/* .courses
+{
+    background-image:url("../../../src/assets/img1/up1.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+   
+} */
+.upcoming
+{
+    /* height: 480px; */
+    
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.mid
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgba(0, 0, 0, 0.233);
+}
+.con:hover .mid{
+    opacity: 1;
+}
+.text {
+  
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+ 
+  }
+
+.ca
+{ 
+    height: 550px;
+    width: 300px;  
+}
+
+.background-primary {
+    background-color:#4cc1bb3a!important;
+  }
+
+
+.teacher
+{ 
+  background-image:url("../../../src/assets/img1/sahajbg1.jpg");
+  /* min-height: 500px; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.178);
+
+ 
+}
+
+.teacher1
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .ttext
+{
+    border: 5px solid brown;
+    width: 40%;
+    height: 70%;
+    margin-top: 10%;
+    margin-left: -3%;
+    text-align: center;
+} */
+
+.timg
+{
+    padding-top: 10px;
+    text-align: center;
+   
+}
+
+.mat-expansion-panel{
+    width: 60%;
+    margin: 5px auto;
+}
+
+@media all and (max-width:768px){
+    .mat-expansion-panel{
+        width: 100%;
+        margin: 5px auto;
+    }
+}
+.program{
+    margin: 0 auto;
+    width: 95%;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    background-image: url('../../assets/img1/download.jpg');
+  
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    /* flex-basis: 30%; */
+    justify-content: space-around;
+}
+
+.row div{
+    text-align: center;
+    width: 33.33%;
+}
+.row div .pdetails{
+    padding-top: 25px;
+     font-family:'Caveat';
+     font-weight: 300;
+     font-size: 24px;
+     padding: 5%;
+}
+
+@media all and (max-width:767px){
+    .row div{
+        width: 100%;
+    }
+}
