@@ -1,5 +1,4 @@
 .ex{
-  
     background-image:url("../../../src/assets/img1/homebg3.jpg");
     min-height: 500px;
     background-attachment: fixed;
@@ -42,4 +41,4 @@
     .cimg{
         margin-left: 40px;
     }
-}
+} 

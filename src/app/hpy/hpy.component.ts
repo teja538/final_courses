@@ -10,7 +10,7 @@ import {Icourse1} from '../course';
 })
 export class HpyComponent implements OnInit {
 
-  coursedet1:Icourse1[]
+  // coursedet1:Icourse1[]
 show=false
   images=[
     {img:'../../assets/img1/hpyimg1.jpg'},
@@ -26,19 +26,19 @@ show=false
     // {img:'../../assets/img1/hpyimg2.jpg'},
     // {img:'../../assets/img1/hpyimg3.jpg'},
   ]
-//   coursedet1=[
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-//     {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
-// ]
+  coursedet1=[
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+    // {"coursename":"sdnbfjsd","text":"jgds","startdate":"25/9/2020","enddate":"28/09/2020","time":"6-8pm","teacher":"bshfdd","link":"kjnvnsd","userpassword":"zdfbsdj"},
+]
 
 
 

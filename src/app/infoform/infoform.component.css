@@ -1,0 +1,39 @@
+.card
+{
+    width: 50%;
+    margin-left: 25%;
+    
+   
+}
+.datetime
+{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.endtime
+{
+    margin-left: 10%;
+}
+
+@media all and (max-width: 890px) {
+
+    .endtime
+    {
+        margin-left: 0%;
+    }
+   
+  }
+
+
+@media all and (max-width: 600px) {
+    .card{
+        margin-left:5%;
+        width: 90%;
+       
+    }
+   
+  }
+
+
+

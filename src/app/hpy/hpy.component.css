@@ -8,7 +8,7 @@
 }
 .bg
 {
-    background-image:url("../../../src/assets/img1/hpybg1.1.jpg");
+    background-image:url("../../assets/img1/hpybg1.1.jpg");
     min-height:550px;
     background-attachment: fixed;
     background-position:center;
@@ -68,7 +68,7 @@
 }
 .three
 {
-    background-image:url("../../../src/assets/img1/stone.jpg");
+    background-image:url("../../assets/img1/stone.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
