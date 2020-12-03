@@ -1,3 +1,13 @@
+.heading{
+    font-family: 'Mulish', sans-serif;
+    font-size: 38px;
+    padding: 40px;
+    line-height: 150%;
+    text-align: center;
+    
+}
+
+
 .bg
 {
     background-image:url("../../assets/img1/vtpbg1.jpg");
@@ -7,7 +17,30 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-h1{
+.bg header{
+    color: aliceblue;
+    padding: 14px;
+    margin-left: 7%;
+    padding-top: 4%;
+}
+.bg header .H1{
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.bg header .fancy{
+    font-family: 'Caveat';
+    font-size: 40px;
+    line-height: 40px;
+}
+@media screen and (max-width:320px){
+    .bg header{
+        margin-left: 2%;
+    }
+}
+
+/* h1{
     line-height: 62px;
 }
 
@@ -15,7 +48,7 @@ h1{
     font-size: 62px;
     font-weight: 400;
     font-family: 'Questrial', sans-serif;
-}
+} */
 
 
 .prereq
@@ -27,9 +60,17 @@ h1{
     padding:2%;
     color:silver
 }
+
+@media screen and (max-width:420px){
+    .prereq
+    {
+        margin-bottom: 50px;
+    }
+}
+
 .upcoming
 {
-    padding: 6%;
+    /* padding: 6%; */
   
     display: flex;
     flex-direction: row;

@@ -1,3 +1,189 @@
+h1{
+  text-align: center;
+  font-size: 40px;
+  line-height: 43px;
+  padding: 4%;
+  /* font-family: 'Arimo', sans-serif; */
+
+}
+
+.quote
+{
+    /* height: 200px; */
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.116);
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.quo h2{
+    padding: 20px;
+    font-weight:20;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.upcoming
+{
+    padding:0 6% 6% 6% ;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+
+
+.ca
+{ 
+    height: 520px;
+    width: 300px; 
+}
+
+.mid
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 48.5%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgba(0, 0, 0, 0.233);
+}
+.con:hover .mid{
+    opacity: 1;
+}
+.text {
+  
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+ 
+  }
+
+  .teacher
+  {
+    background-image:url("../../../src/assets/img1/aboutbg1.jpg");
+    min-height: 70%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:inset rgba(222, 184, 135, 0.555);
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+      /* align-items: center; */
+   
+  }
+
+  .ttext
+  {
+      border: 5px solid black;
+      color: white;
+      text-align: center;
+      width: 40%;
+      height: 70%;
+      margin-top: 10%;
+      margin-bottom: 6%;
+      margin-left: -3%;
+  }
+
+  .cdet
+{
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.sevenfive
+  {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-around;
+  }
+
+  .lym{
+    
+    background-image: url('../../assets/img1/lym1.jpg');
+    background-size: cover; 
+  }
+  .stress{
+    background-image: url('../../assets/img1/stress1.jpg');
+    background-size: cover; 
+  }
+  .anxiety{
+    background-image: url('../../assets/img1/anxiety1.jpg');
+    background-size: cover; 
+  }
+  .dip{
+    background-image: url('../../assets/img1/dip1.jpg');
+    background-size: cover; 
+  }
+  .cho{
+    background-image: url('../../assets/img1/cho.jpg');
+    background-size: cover; 
+  }
+  .bp{
+    background-image: url('../../assets/img1/bp.png');
+    background-size: cover; 
+  }
+
+  h4{
+      font-size: 18px;
+  }
+  .cards1 {
+    padding: 16px;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* margin-top: 10%;
+    margin-right: 10%; */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+.cards1 > mat-card {
+    margin-bottom: 16px;
+    /* width:60% ;
+    height: 30%; */
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .ex{
     background-image:url("../../../src/assets/img1/homebg3.jpg");
     min-height: 500px;

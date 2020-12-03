@@ -1,0 +1,21 @@
+.main
+{
+    background-color:rgba(0, 0, 0, 0.116);
+    margin: 0px auto;
+    padding:15px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content:space-evenly;
+    
+}
+
+.heading{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200px;
+    padding-top: 20px;
+
+    line-height: 150%;
+    
+    
+}

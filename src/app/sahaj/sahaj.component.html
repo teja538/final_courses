@@ -7,9 +7,20 @@
     </header>
 </div>
 
-<div class="quote">
+<!-- <div class="quote">
     <h2 class="quoteh">Its a effortless meditation technique which helps in clarity of mind and thoughs
         and increase the level of self awareness</h2>
+</div> -->
+<div class="quote1">
+  <div class="quote">
+    <div class="q_image">
+    <img src="../assets/img1/sahajquo.jpg" height="150px" style="border-radius: 50%;">
+    </div>
+    <div class="quo">
+      <h2 class="quoteh"><span style="font-size: 50px;">''</span>Its a effortless meditation technique<br> which helps in clarity of mind and <br>thoughs
+        and increase the level of self awareness</h2>
+    </div>
+  </div>
 </div>
 
 <div class="program">
@@ -33,7 +44,7 @@
 
   
 <div class="courses">
-    <h1 style="text-align: center;padding-top:10px">Upcoming Courses</h1>
+    <h1 class="heading">Upcoming Courses</h1>
     <div class="upcoming">
       <div *ngFor="let cd of coursedet1;let i=index;" >
         <div class="ca card0">
@@ -43,12 +54,20 @@
             <div class="mid">
               <div class="text">{{cd.Imagetext}}</div></div>
             </div>
-            <mat-card-content>
+            <!-- <mat-card-content>
                 <h3 style="font-family: 'Sriracha', cursive;">{{cd.coursename}}</h3>
                 <p class="cdet">{{cd.startdate }} to {{cd.enddate }}</p>
                 <p class="cdet">{{cd.time}}</p>
                 <p class="cdet">{{cd.teacher}}</p>
-            </mat-card-content>
+            </mat-card-content> -->
+
+            <mat-card-content>
+              <p ><b>Course :</b> <span style="font-family: 'Sriracha', cursive;font-size: 18px;">{{cd.coursename}}</span></p>
+              <p class="cdet"><b>Start Date :</b> {{cd.startdate|date:'mediumDate' }}  </p>
+              <p class="cdet"><b>End Date :</b> {{cd.enddate |date:'mediumDate' }}</p>
+              <p class="cdet"><b>Timmings :</b> {{cd.time}}</p>
+              <p class="cdet"><b>Teacher :</b> {{cd.teacher}}</p>
+          </mat-card-content>
     
             <mat-card-actions style="display: flex;justify-content: space-around;">
               <button mat-raised-button class="background-primary">REGISTER</button>
@@ -63,12 +82,12 @@
   
   
     
-  <h1 style="text-align: center;padding: 3%;">About the Trainer</h1>
-  <div class="teacher">
   
+  <div class="teacher">
+    <h1 class="heading">About the Trainer</h1>
     <div class="teacher1">
         <div class="timg" >
-          <img src="../assets/img/ohp1.jpg" width="80%">
+          <img src="../assets/img1/elon.jpg" width="200px" height="200px">
         </div>
   
         <div class="ttext">
@@ -80,7 +99,7 @@
   </div>
     
   <mat-accordion >
-    <h1 style="text-align: center;padding-top:30px;padding-bottom:20px">I’m interested but I have some more questions…</h1>
+    <h1 class="heading">I’m interested but I have some more questions…</h1>
   <mat-expansion-panel  *ngFor="let faq of FAQ , let i = index;"
   (opened)="setOpened(i)"
   (closed)="setClosed(i)">

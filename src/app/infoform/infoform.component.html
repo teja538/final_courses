@@ -74,7 +74,10 @@
                 <!-- <mat-error *ngIf="enddate.errors?.required">end-date is required</mat-error> -->
             </mat-form-field>
 
-            <button [disabled]="userform.form.invalid" class="btn btn-primary" type="submit">Submit form</button>
+            <!-- <button [disabled]="userform.form.invalid" class="btn btn-primary" type="submit">Submit form</button> -->
+            <div style="padding-bottom: 20px;">
+            <button mat-raised-button class="background-primary" [disabled]="userform.form.invalid"  type="submit">Submit form</button>
+            </div>
 
         </form>
     </div>

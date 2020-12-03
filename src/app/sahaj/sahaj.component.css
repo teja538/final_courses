@@ -1,12 +1,13 @@
 
 .heading{
-    font-family: 'Sriracha';
-    font-size: 24px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 38px;
     padding: 40px;
-    line-height: 30px;
+    line-height: 150%;
     text-align: center;
     
 }
+
 .bg
 {
     background-image:url("../../assets/img1/mou.jpg");
@@ -25,7 +26,9 @@
 }
 .bg header .H1{font-size: 60px;
     line-height: 60px;
-    font-family: 'Questrial';}
+    font-family: 'Mulish', sans-serif;
+    
+    }
 
 .bg header .fancy{
     font-family: 'Caveat';
@@ -38,7 +41,7 @@
     }
 }
 
-.quote
+/* .quote
 {
     background-image:url("../../assets/img1/quo-removebg-preview.png");
     min-height: 25%;
@@ -46,10 +49,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     
-}
+} */
 
-.quoteh{
-  /* text-align: center; */
+/* .quoteh{
+  
   width: 50%;
   margin: -10px 20% 0 20%;
   font-family:'Caveat';
@@ -62,8 +65,26 @@
     .quoteh{width: 92%;
         font-size: 32px;
         margin: 0 auto;}
+} */
+.quote
+{
+    /* height: 200px; */
+    padding: 2%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
+.quo h2{
+    padding: 20px;
+    font-weight:20;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    line-height: 40px;
+}
 
 /* .courses
 {
@@ -163,7 +184,7 @@
 
 .timg
 {
-    padding-top: 10px;
+    padding-right: 20px;
     text-align: center;
    
 }

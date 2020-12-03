@@ -60,16 +60,16 @@ constructor(private servedetailsservice:ServedetailsService) { }
 
   ngOnInit(): void {
 
-    // this.servedetailsservice.getcoursedeatails()
-    //     .subscribe(det=>{
+    this.servedetailsservice.getcoursedeatails()
+        .subscribe(det=>{
 
-    //       function isohp(element,index,det)
-    //       {
-    //         return (det[index].coursename=="Online Happiness Program")
-    //       } 
-    //       this.coursedet1=det.filter(isohp)
-    //       console.log(this.coursedet1)
-    //       });      
+          function isohp(element,index,det)
+          {
+            return (det[index].coursename=="Online Happiness Program")
+          } 
+          this.coursedet1=det.filter(isohp)
+          console.log(this.coursedet1)
+          });      
     } 
 
     currentlyOpenedItemIndex = -1;

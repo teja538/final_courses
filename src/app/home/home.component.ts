@@ -20,8 +20,11 @@ slidessmall=[{'image':'../assets/img1/slide1small1.png','text':'The Happiness Pr
  {'image':'../assets/img1/slide2.PNG','text':'2nd slide'},
  {'image':'../assets/img1/slide3.PNG','text':'3rd slide'}]
  experience=[{
-  'image':'../../assets/img1/boat.jpg','h':'A','t':'SKY significantly reduced cholesterol,with no change in diet in just 3 weeks,<br>even under stressful conditions.'
- },{'image':'../assets/img1/boat.jpg','h':'B','t':'SKY significantly reduced cholesterol,with no change in diet in just 3 weeks,<br>even under stressful conditions.'},{'image':'../assets/img1/boat.jpg','h':'B','t':'SKY significantly reduced cholesterol,with no change in diet in just 3 weeks,<br>even under stressful conditions.'}]
+  'image':'../../assets/img1/mou.jpg','h':'A','t':'SKY significantly reduced cholesterol,with no change in diet in just 3 weeks,<br>even under stressful conditions.'
+ },{'image':'../assets/img1/vol1.jpg','h':'B','t':'SKY significantly reduced cholesterol,with no change in diet in just 3 weeks,<br>even under stressful conditions.'},
+ {'image':'../assets/img1/stone.jpg','h':'B','t':'SKY significantly reduced cholesterol,with no change in diet in just 3 weeks,<br>even under stressful conditions.'}]
+
+ 
 
 
   constructor() { }
@@ -35,7 +38,8 @@ this.slides=this.slidessmall
     }
     if(window.innerWidth>=320 && window.innerWidth<375){
       this.pag=90
-      this.pag2=70
+      // this.pag2=70
+      this.pag2=80
  this.slides=this.slidessmall
 
     }
@@ -60,7 +64,7 @@ this.slides=this.slidessmall
      if(window.innerWidth<320){
        this.pag=100
        this.pag2=80
- this.slides=this.slidessmall
+      this.slides=this.slidessmall
 
      }
      if(window.innerWidth>=320 && window.innerWidth<375){

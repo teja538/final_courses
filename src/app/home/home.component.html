@@ -8,7 +8,7 @@
   [proportion]="pag2"
   slides="3"
   [loop]="true"
-  [hideArrows]="true"
+  [hideArrows]="false"
   [hideIndicators]="false"
   [useKeyboard]="true"
   [useMouseWheel]="false"
@@ -19,15 +19,273 @@
     *ngFor="let slide of slides; let i = index"
     [image]="slide.image"
     overlayColor="#00000040"
-    [hideOverlay]="false"
+    [hideOverlay]="true"
   >
   </mat-carousel-slide>
 </mat-carousel>
 </div>
 
+<div class="quote1">
+  <div class="quote">
+    <div class="q_image">
+    <img src="../assets/img1/step.jpg" height="150px" style="border-radius: 50%;">
+    </div>
+    <div class="quo">
+      <h2>
+        “Difference between motivation and inspiration - <br>Motivation is external and short lived.<br> Inspiration is internal and lifelong” - be inspired
+      </h2>
+    </div>
+  </div>
+</div>
+
+<h1>Upcoming Courses</h1>
+<div class="upcoming">
+  <div class="ca card1">
+    <mat-card>
+      <div class="con">
+      <img mat-card-image src="../../assets/img1/insideimg.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
+      <div class="mid">
+        <div class="text">Lets do</div></div>
+      </div>
+      <mat-card-content>
+          <h3 style="font-family: 'Sriracha';font-size: 23px;">The Happiness Program</h3>
+          <p class="cdet">10th to 13th sept</p>
+          <p class="cdet">evening 6 to 8</p>
+          <p class="cdet">with sudarshan badireddy</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button class="background-primary">REGISTER</button>
+        <!-- <button mat-raised-button class="background-primary">SHARE</button> -->
+        <button mat-raised-button class="background-primary" routerLink="/hpy">MORE</button>
+        <!-- <button mat-raised-button class="background-primary"><mat-icon style="text-align: center;">share</mat-icon></button> -->
+        <!-- <button><mat-icon style="text-align: center;">share</mat-icon></button> -->
+        <button mat-mini-fab style="background-color: lightseagreen;">
+          <mat-icon>share</mat-icon>
+        </button>
+        <!-- <button mat-raised-button class="background-primary"> <mat-icon>share</mat-icon></button> -->
+
+
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="ca card2">
+
+    <mat-card>
+      <div class="con">
+      <img mat-card-image src="../../assets/img1/sahaj1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
+      <div class="mid">
+        <div class="text">Lets do</div></div>
+      </div>
+      <mat-card-content>
+          <h3 style="font-family: 'Sriracha';font-size: 23px;">Sahaj samadhi meditation</h3>
+          <p class="cdet">10th to 13th sept</p>
+          <p class="cdet">evening 6 to 8</p>
+          <p class="cdet">with sudarshan badireddy</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button class="background-primary">REGISTER</button>
+        <button mat-raised-button class="background-primary"  routerLink="/sahaj">More</button>
+        <button mat-mini-fab style="background-color: lightseagreen;">
+          <mat-icon>share</mat-icon>
+        </button>
+        
+      </mat-card-actions>
+    </mat-card>
+    
+  </div>
+
+
+  <div class="ca card3">
+
+    <mat-card>
+      <div class="con">
+      <img mat-card-image src="../../assets/img1/vol1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
+      <div class="mid">
+        <div class="text">Lets do</div></div>
+      </div>
+      <mat-card-content>
+          <h3 style="font-family: 'Sriracha';font-size: 23px;">Volunteer Training Program</h3>
+          <p class="cdet">10th to 13th sept</p>
+          <p class="cdet">evening 6 to 8</p>
+          <p class="cdet">with sudarshan badireddy</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button class="background-primary">REGISTER</button>
+        <button mat-raised-button class="background-primary" routerLink="/vtp">More</button>
+        <button mat-mini-fab style="background-color: lightseagreen;">
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+    
+  </div>
+</div>
+
+
+
+<div class="teacher">
+  <div class="timg" style="margin-top: 4%;">
+    <img src="../assets/img1/elon.jpg" height="250px" width="250px" style="border: 5px solid black">
+  </div>
+  <div class="ttext">
+    <p>kjadnfkjsfmbh<br>jkshdkjfhdsiufhsnbbgsuh<br>ilsufdkjhskdhfisudfjb</p>
+    <p>kjadnfkjsfmbh<br>jkshdkjfhdsiufhsnbbgsuh<br>ilsufdkjhskdhfisudfjb</p>
+    <p>kjadnfkjsfmbh<br>jkshdkjfhdsiufhsnbbgsuh<br>ilsufdkjhskdhfisudfjb</p>
+  </div>
+</div>
+
+
+<div class="about">
+
+  <h1>Benifits of SKY</h1>
+
+  <mat-card style="width: 65%;margin: auto;margin-bottom: 10px;">
+    <mat-card-content>
+        <div class="sevenfive">
+          <div class="img">
+            <img src="../../assets/img1/70.png" height="110px" width="180px">
+          </div>
+          
+          <div class="matter">
+            <p style="font-size: 22px;font-family: 'Mulish', sans-serif;;text-align: center;line-height: 30px;">
+              independent studies conducted on four continents and published in  <br>peer-review jornals have demonstrated
+              a comprehensive range of <br>benefits from practicing SKY.
+            </p>
+          </div>
+        </div>
+
+    </mat-card-content>
+</mat-card>
+
+<div class="cards1" FxLayout="row wrap">
+  <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+  <mat-card>
+     
+
+        <div class="sevenfive">
+          <div mat-card-avatar class="lym" style="width: 100px;height: 100px;">
+          </div>
+          <div style="text-align: center;">
+            <mat-card-title><h4>Increased Lymphocyte Count by <span>5X</span></h4></mat-card-title>
+            <mat-card-subtitle style="font-size: 16px;">compared to controls,suggesting enhanced immune <br>function,DNA changed increases the life span of <br> white blood cells</mat-card-subtitle>
+          </div>
+        </div>
+  </mat-card>
+  </div>
+
+  <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+  <mat-card>
+        <div class="sevenfive">
+          <div mat-card-avatar class="stress" style="width: 100px;height: 100px;"></div>
+          <div style="text-align: center;">
+            <mat-card-title><h4>Stress Harmones diminished by <span>56%</span></h4></mat-card-title>
+          <mat-card-subtitle style="font-size: 16px;">Adding SKY to conventional treatment for individuals <br>in recovery for substance use was Twice as effective<br> in reducing Cortisol Levels</mat-card-subtitle>
+          </div>
+        </div>
+  </mat-card>
+  </div>
+</div>
+
+<div class="cards1" FxLayout="row wrap">
+  <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+  <mat-card>
+  
+        <div class="sevenfive">
+          <div mat-card-avatar class="anxiety" style="width: 100px;height: 100px;"></div>
+          <div style="text-align: center;">
+            <mat-card-title><h4>Lowered Anxiety by <span>23%</span></h4></mat-card-title>
+            <mat-card-subtitle style="font-size: 16px;">73% of individuals suffereing from Generalized <br>Anxiety Disorder experienced significant reductions <br>in anxiety,after learning SKY</mat-card-subtitle>
+          </div>
+        </div>
+
+  </mat-card>
+  </div>
+  <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+  <mat-card>
+      <!-- <mat-card-header>
+          <div mat-card-avatar class="dip" style="width: 100px;height:100px;"></div>
+          <mat-card-title><h4>Depression relieved by <span>67%</span></h4></mat-card-title>
+          <mat-card-subtitle style="font-size: 16px;">SKY significantly reduced major Depressive disorder as effectively as anti-depressant drug theropy,yet is free of unwanted side effects</mat-card-subtitle>
+        </mat-card-header> -->
+
+        <div class="sevenfive">
+          <div mat-card-avatar class="dip" style="width: 100px;height:100px;"></div>
+          <div style="text-align: center;">
+            <mat-card-title><h4>Depression relieved by <span>67%</span></h4></mat-card-title>
+            <mat-card-subtitle style="font-size: 16px;">SKY significantly reduced major Depressive disorder <br>as effectively as anti-depressant drug theropy,yet is <br>free of unwanted side effects</mat-card-subtitle>
+          </div>
+        </div>
+        
+  </mat-card>
+  </div>
+</div>
+
+<div class="cards1" FxLayout="row wrap">
+  <div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+  <mat-card>
+    
+         
+          <div class="sevenfive">
+            <div mat-card-avatar class="cho" style="width: 100px;height: 100px;"></div>
+            <div style="text-align: center;">
+              <mat-card-title><h4>Cholesterol minimized in just <span>3 weeks</span></h4></mat-card-title>
+              <mat-card-subtitle style="font-size: 16px;">SKY significantly reduced cholesterol,with no change<br>in diet in just 3 weeks,<br>even under stressful conditions.</mat-card-subtitle>
+            </div>
+          </div>
+        
+  </mat-card>
+</div>
+<div fxFlex="50%" fxFlex.xs="80%" fxFlex.sm="90%">
+  <mat-card>
+     
+          <div class="sevenfive">
+            <div mat-card-avatar class="bp" style="width: 100px;height: 100px;"></div>
+            <div style="text-align: center;">
+              <mat-card-title><h4>Healthier Blood Pressure <span>5X</span></h4></mat-card-title>
+          <mat-card-subtitle style="font-size: 16px;">Heart rate and blood pressure are two key indicators<br> of heart function.Peaple practicing SKY showed <br>healthier Heart rates and Blood Pressure values</mat-card-subtitle>
+            </div>
+          </div>
+        
+  </mat-card>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="ex">
   <div>
-    <h1 style="color: aliceblue;text-align: center;padding: 4%;">What others say ...............</h1>
+    <h1 style="color: aliceblue;">What others say ...............</h1>
   </div>
 <div class="car2">
   <mat-carousel
@@ -50,7 +308,7 @@
     <mat-card>
         <img mat-card-image src="{{ex.image}}" class="cimg">  
       <mat-card-content style="text-align: center;padding: 0 10%;">  
-          <mat-card-title style="padding-bottom:0 ;"><h3>{{ex.h}}<span>3 weeks</span></h3></mat-card-title>
+          <mat-card-title style="padding-bottom:0 ;"><h3>{{ex.h}}<span style="font-size: 23px;">3 weeks</span></h3></mat-card-title>
           <mat-card-subtitle style="font-size: 16px;">{{ex.t}}</mat-card-subtitle>
         </mat-card-content>
     </mat-card>
@@ -58,4 +316,6 @@
 </mat-carousel>
 </div> 
 </div>
+
+
 

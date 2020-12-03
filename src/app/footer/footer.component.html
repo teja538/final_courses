@@ -1,1 +1,64 @@
-<p>footer works!</p>
+
+<div class="main">
+
+    <div class="contact">
+        <h2 class="heading">Contact</h2>
+        <address>
+            ..........................<br>.................<br>...........<br>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">phone</mat-icon>:9999999999<br>
+            <span class="iconify" data-icon="mdi-whatsapp" data-inline="false" style="font-size:24px;"></span>: 852 8765 4321<br>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">email</mat-icon>:
+            <a href="mailto:saisree538@gmaul.com">saisree538@gmail.com</a>
+        </address>
+
+    </div>
+    <div class="links">
+        <h2 class="heading">Links</h2>
+        <p routerLink="/home">home</p>
+        <p routerLink="/hpy">Happiness Program</p>
+        <p routerLink="/vtp">VTP</p>
+        <p routerLink="/sahaj">Sahaj</p>
+
+    </div>
+    <div class="cform">
+        <h2 class="heading">Query form</h2>
+        <form novalidate #loginForm="ngForm" >
+            <p>
+            <mat-form-field appearance="legacy" style="width: 100%;margin-bottom: -25px;">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name">
+            </mat-form-field>
+            </p>
+    
+            <p>
+            <mat-form-field appearance="legacy" style="width:100%;margin-bottom: -25px;">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="email">
+            </mat-form-field>
+            </p>
+    
+            <p>
+            <mat-form-field appearance="legacy" style="width: 100%;margin-bottom: -25px;">
+                <mat-label>message</mat-label>
+                <textarea matInput placeholder="message" matTextareaAutosize matAutosizeMinRows="3" matAutosizeMaxRows="5"></textarea>
+            </mat-form-field>
+            </p>
+            <button mat-raised-button style="background-color:lightseagreen;">Submit</button>
+        </form>
+
+    </div>
+    <div class="social">
+        <h2 class="heading">Get in touch with</h2>
+        
+            
+            <a mat-icon-button class="btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+            <a mat-icon-button class="btn-facebook" style="color:#fff!important; background-color:#3b5998!important;" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+            <a mat-icon-button class="btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+            <a mat-icon-button class="btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+            <a mat-icon-button class="btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+            <a mat-icon-button class="btn-mail" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+        
+    
+
+    </div>
+</div>

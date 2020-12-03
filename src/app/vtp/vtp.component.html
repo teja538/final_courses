@@ -10,18 +10,25 @@
  
   
     <div class="bg">
-      <header style="color: aliceblue;padding: 20px;margin-left: 7%;line-height: 60px;">
+      <!-- <header style="color: aliceblue;padding: 20px;margin-left: 7%;line-height: 60px;">
         <h1 style="font-size: 60px;padding: 10px;line-height: 60px;"><span style="color:orange">V</span>olunteer</h1>
         <h1 style="font-size: 60px;padding: 10px;line-height: 60px;"><span style="color:orange">T</span>raining <span style="color:orange">P</span>rogram</h1>
         <h1 style="font-size:30px;font-family: 'Caveat';line-height: 40px;">Discover & polish hidden shades of your Peronality...<br>Meet colorful & <span style="color:orange">Versatile</span> you</h1>     
+      </header> -->
+
+      <header >
+        <h1 class="H1"><span style="color:orange">V</span>olunteer</h1>
+        <h1 class="H1"><span style="color:orange">T</span>raining <span style="color:orange">P</span>rogram</h1>
+        <h1 class="fancy">Discover & polish hidden shades of your Peronality...<br>Meet colorful & <span style="color:orange">Versatile</span> you</h1>
       </header>
+
       <div class="prereq">
         <h2>Pre-requisites: (VTP)</h2>
-        <p style="font-size: 18px;">All applicants must have taken the Happiness Program/YES!+ and Part 2 / Advance meditation program, practice Sudarshan Kriya daily for a minimum of six months prior to applying for the VTP.</p>
+        <p style="font-size: 16px;line-height: 24px;">All applicants must have taken the Happiness Program/YES!+ and Part 2 / Advance meditation program, practice Sudarshan Kriya daily for a minimum of six months prior to applying for the VTP.</p>
       </div>
     </div>
 
-    <h1 style="text-align: center;margin-top: 6%;font-size: 40px;">Upcoming Courses</h1>
+    <h1 class="heading">Upcoming Courses</h1>
     <div class="upcoming">
         <div *ngFor="let cd of coursedet1;let i=index;" >
             <div class="ca card0">
@@ -31,11 +38,18 @@
                 <div class="mid">
                 <div class="text">{{cd.Imagetext}}</div></div>
                 </div>
-                <mat-card-content>
+                <!-- <mat-card-content>
                     <h3 style="font-family: 'Sriracha', cursive;">{{cd.coursename}}</h3>
                     <p class="cdet">{{cd.startdate | date:'mediumDate'}} to {{cd.enddate | date:'mediumDate'}}</p>
                     <p class="cdet">{{cd.time}}</p>
                     <p class="cdet">{{cd.teacher}}</p>
+                </mat-card-content> -->
+                <mat-card-content>
+                    <p ><b>Course :</b> <span style="font-family: 'Sriracha', cursive;font-size: 18px;">{{cd.coursename}}</span></p>
+                    <p class="cdet"><b>Start Date :</b> {{cd.startdate|date:'mediumDate' }}  </p>
+                    <p class="cdet"><b>End Date :</b> {{cd.enddate |date:'mediumDate' }}</p>
+                    <p class="cdet"><b>Timmings :</b> {{cd.time}}</p>
+                    <p class="cdet"><b>Teacher :</b> {{cd.teacher}}</p>
                 </mat-card-content>
         
                 <mat-card-actions style="display: flex;justify-content: space-around;">
@@ -51,12 +65,12 @@
     <div class="fixedbg">
         <img src="../assets/img1/voltree1.jpg" height="20%" width="40%"> 
         <div class="imgtext">
-            <h3 style="font-family: 'Sriracha', cursive;">A volunteer has <br>such a joy –<br> that joy, itself, <br>comes as the reward.</h3>
+            <h3 style="font-family: 'Sriracha', cursive;font-size: 24px;">A volunteer has <br>such a joy –<br> that joy, itself, <br>comes as the reward.</h3>
         </div>
     </div>
 
     <div class="teacher">
-        <h1 style="text-align: center;padding:3%;font-size: 40px;">About the trainer</h1>
+        <h1 class="heading">About the trainer</h1>
         <img src="../assets/img1/elon.jpg" width="300px" height="300px">
         <div style="text-align: center; width: 50%;">
             <p style="font-style: regular;">The term happiness is used in the context of mental or emotional states, including positive or pleasant emotions ranging from contentment to intense joy.[1] It is also used in the context of life satisfaction, subjective well-being, eudaimonia, flourishing and well-being</p>

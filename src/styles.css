@@ -4,9 +4,17 @@ html, body { height: 100%; }
 /* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
 body { margin: 0; font-family: 'Open Sans', sans-serif;};
 
+
+.btn-facebook {color:#fff!important; background-color:#3b5998!important;}
+.btn-google-plus{color:white!important;background-color:#dd4b39!important;}
+.btn-youtube{color:#fff!important;background-color:#ff4b39!important;}
+.btn-linkedin{color:#fff!important;background-color:#007bb6!important;}
+.btn-twitter{color:#fff!important;background-color:#55acee!important;}
+.btn-mail{color:#fff!important;background-color:#512DA8!important;}
+
 /* body { margin: 0; font-family: "poppins", "Helvetica Neue", sans-serif; } */
 
-.heading1 {
+/* .heading1 {
     font-size: 62px;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
@@ -35,4 +43,4 @@ body { margin: 0; font-family: 'Open Sans', sans-serif;};
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
 }
-
+ */
