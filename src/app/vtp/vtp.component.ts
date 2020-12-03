@@ -32,6 +32,9 @@ export class VtpComponent implements OnInit {
             return (det[index].coursename=="Volunteer Training Program")
           } 
           this.coursedet1=det.filter(isvtp)
+          this.coursedet1.sort(function(a,b){
+            return <any>new Date(a.startdate) - <any>new Date(b.startdate);
+          });
           console.log(this.coursedet1)
           });      
     } 

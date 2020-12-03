@@ -1,3 +1,4 @@
+<div class="hpy" style="overflow: hidden;">
 <div class="bg">
   <header >
     <h1 class="H1">The</h1>
@@ -58,7 +59,8 @@
       <div class="text">{{cd.Imagetext}}</div></div>
     </div>
     <mat-card-content>
-        <p ><b>Course :</b> <span style="font-family: 'Sriracha', cursive;font-size: 18px;">{{cd.coursename}}</span></p>
+        <!-- <p ><b>Course :</b> <span style="font-family: 'Sriracha', cursive;font-size: 18px;">{{cd.coursename}}</span></p> -->
+        <h2 style="font-family: 'Mulish', cursive;"><b>{{cd.coursename}}</b></h2>
         <p class="cdet"><b>Start Date :</b> {{cd.startdate|date:'mediumDate' }}  </p>
         <p class="cdet"><b>End Date :</b> {{cd.enddate |date:'mediumDate' }}</p>
         <p class="cdet"><b>Timmings :</b> {{cd.time}}</p>
@@ -127,3 +129,5 @@
   
 
 </mat-accordion>
+
+</div>

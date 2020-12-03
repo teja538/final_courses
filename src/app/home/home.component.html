@@ -40,18 +40,25 @@
 
 <h1>Upcoming Courses</h1>
 <div class="upcoming">
+
+  <div *ngFor="let cd of coursedeth;let i=index;" >
+
   <div class="ca card1">
     <mat-card>
       <div class="con">
       <img mat-card-image src="../../assets/img1/insideimg.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
       <div class="mid">
-        <div class="text">Lets do</div></div>
+        <!-- <div class="text">Lets do</div></div> -->
+        <div class="text">{{cd.Imagetext}}</div></div>
       </div>
       <mat-card-content>
-          <h3 style="font-family: 'Sriracha';font-size: 23px;">The Happiness Program</h3>
-          <p class="cdet">10th to 13th sept</p>
-          <p class="cdet">evening 6 to 8</p>
-          <p class="cdet">with sudarshan badireddy</p>
+          
+          <h2><span style="font-family: 'Mulish', cursive;"><b>{{cd.coursename}}</b></span></h2>
+          <p class="cdet"><b>Start Date :</b> {{cd.startdate|date:'mediumDate' }}  </p>
+          <p class="cdet"><b>End Date :</b> {{cd.enddate |date:'mediumDate' }}</p>
+          <p class="cdet"><b>Timings :</b> {{cd.time}}</p>
+          <p class="cdet"><b>Teacher :</b> {{cd.teacher}}</p>
+          
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button class="background-primary">REGISTER</button>
@@ -67,21 +74,24 @@
 
       </mat-card-actions>
     </mat-card>
+    </div>
   </div>
 
+  <div *ngFor="let cd of coursedets;let i=index;" >
   <div class="ca card2">
 
     <mat-card>
       <div class="con">
       <img mat-card-image src="../../assets/img1/sahaj1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
       <div class="mid">
-        <div class="text">Lets do</div></div>
+        <div class="text">{{cd.Imagetext}}</div></div>
       </div>
       <mat-card-content>
-          <h3 style="font-family: 'Sriracha';font-size: 23px;">Sahaj samadhi meditation</h3>
-          <p class="cdet">10th to 13th sept</p>
-          <p class="cdet">evening 6 to 8</p>
-          <p class="cdet">with sudarshan badireddy</p>
+        <h2 style="font-family: 'Mulish', cursive;"><b>{{cd.coursename}}</b></h2>
+        <p class="cdet"><b>Start Date :</b> {{cd.startdate|date:'mediumDate' }}  </p>
+        <p class="cdet"><b>End Date :</b> {{cd.enddate |date:'mediumDate' }}</p>
+        <p class="cdet"><b>Timings :</b> {{cd.time}}</p>
+        <p class="cdet"><b>Teacher :</b> {{cd.teacher}}</p>
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button class="background-primary">REGISTER</button>
@@ -92,23 +102,24 @@
         
       </mat-card-actions>
     </mat-card>
-    
+    </div>
   </div>
 
-
+  <div *ngFor="let cd of coursedetv;let i=index;" >
   <div class="ca card3">
 
     <mat-card>
       <div class="con">
       <img mat-card-image src="../../assets/img1/vol1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu" >
       <div class="mid">
-        <div class="text">Lets do</div></div>
+        <div class="text">{{cd.Imagetext}}</div></div>
       </div>
       <mat-card-content>
-          <h3 style="font-family: 'Sriracha';font-size: 23px;">Volunteer Training Program</h3>
-          <p class="cdet">10th to 13th sept</p>
-          <p class="cdet">evening 6 to 8</p>
-          <p class="cdet">with sudarshan badireddy</p>
+        <h2><span style="font-family: 'Mulish', cursive;"><b>{{cd.coursename}}</b></span></h2>
+        <p class="cdet"><b>Start Date :</b> {{cd.startdate|date:'mediumDate' }}  </p>
+        <p class="cdet"><b>End Date :</b> {{cd.enddate |date:'mediumDate' }}</p>
+        <p class="cdet"><b>Timings :</b> {{cd.time}}</p>
+        <p class="cdet"><b>Teacher :</b> {{cd.teacher}}</p>
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button class="background-primary">REGISTER</button>
@@ -118,7 +129,7 @@
         </button>
       </mat-card-actions>
     </mat-card>
-    
+  </div>
   </div>
 </div>
 
@@ -250,33 +261,7 @@
   </mat-card>
 </div>
 </div>
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -307,7 +292,7 @@
   *ngFor="let ex of experience; let i = index">
     <mat-card>
         <img mat-card-image src="{{ex.image}}" class="cimg">  
-      <mat-card-content style="text-align: center;padding: 0 10%;">  
+      <mat-card-content style="text-align: center;padding: 0 2%;">  
           <mat-card-title style="padding-bottom:0 ;"><h3>{{ex.h}}<span style="font-size: 23px;">3 weeks</span></h3></mat-card-title>
           <mat-card-subtitle style="font-size: 16px;">{{ex.t}}</mat-card-subtitle>
         </mat-card-content>

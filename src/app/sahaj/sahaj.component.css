@@ -140,6 +140,8 @@
 
 .ca
 { 
+    padding-left: 20px;
+    padding-right: 20px;
     height: 550px;
     width: 300px;  
 }

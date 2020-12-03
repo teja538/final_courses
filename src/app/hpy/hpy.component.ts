@@ -68,6 +68,9 @@ constructor(private servedetailsservice:ServedetailsService) { }
             return (det[index].coursename=="Online Happiness Program")
           } 
           this.coursedet1=det.filter(isohp)
+          this.coursedet1.sort(function(a,b){
+            return <any>new Date(a.startdate) - <any>new Date(b.startdate);
+          });
           console.log(this.coursedet1)
           });      
     } 

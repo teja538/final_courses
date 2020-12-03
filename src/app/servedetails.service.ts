@@ -11,8 +11,11 @@ export class ServedetailsService {
 
   private url="form"
   det:Icourse1[]
+  public ex
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) { 
+   
+  }
 
   servedetails(details)
   {
@@ -25,4 +28,7 @@ export class ServedetailsService {
     console.log(this.http.get<Icourse1[]>(this.url+"/teja"))
     return this.http.get<Icourse1[]>((this.url+"/teja")); 
   }
+
+  
+
 }

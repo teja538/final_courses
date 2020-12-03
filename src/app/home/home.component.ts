@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import {ServedetailsService} from '../servedetails.service';
+import {Icourse1} from '../course';
+
 import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
 @Component({
   selector: 'app-home',
@@ -10,6 +13,11 @@ import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
   }
 })
 export class HomeComponent implements OnInit {
+  coursedet1:Icourse1[]
+  coursedets=[]
+  coursedeth=[]
+  coursedetv=[]
+  public i;
 public pag;
 public pag2;
 slides
@@ -27,7 +35,7 @@ slidessmall=[{'image':'../assets/img1/slide1small1.png','text':'The Happiness Pr
  
 
 
-  constructor() { }
+  constructor(private servedetailsservice:ServedetailsService) { }
 
   ngOnInit(): void {
     if(window.innerWidth<320){
@@ -59,6 +67,56 @@ this.slides=this.slidessmall
      this.pag2=37
      this.slides=this.slidesbig
    }
+
+   this.servedetailsservice.getcoursedeatails()
+   .subscribe(det=>{
+    //  console.log(det)
+    //  function isvtp(element,index,det)
+    //  {
+    //    return (det[index].coursename=="Sahaj samadhi meditation")
+    //  } 
+    //  this.coursedet1=det.filter(isvtp)
+     det.sort(function(a,b){
+       return <any>new Date(a.startdate) - <any>new Date(b.startdate);
+     });
+     console.log(det)
+     
+     for(this.i=0;this.i<det.length;this.i+=1)
+     {
+      
+       if(this.coursedets.length==0)
+       {
+        if(det[this.i].coursename=="Sahaj samadhi meditation")
+        {
+          this.coursedets[0]=det[this.i] 
+        }
+       }
+
+       if(this.coursedeth.length==0)
+       {
+        if(det[this.i].coursename=="Online Happiness Program")
+        {
+          this.coursedeth[0]=det[this.i] 
+        }
+       }
+
+       if(this.coursedetv.length==0)
+       {
+        if(det[this.i].coursename=="Volunteer Training Program")
+        {
+          this.coursedetv[0]=det[this.i] 
+        }
+       }
+       
+     }
+     console.log(this.coursedeth)
+     console.log(this.coursedetv)
+     console.log(this.coursedets)
+     
+     });      
+
+
+
   }
    onResize(event) {
      if(window.innerWidth<320){
