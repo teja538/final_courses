@@ -2,7 +2,8 @@ const express=require("express")
 const router=express.Router()
 
 var MongoClient=require("mongodb").MongoClient;
-var url="mongodb://localhost:27017/";
+// var url="mongodb://localhost:27017/";
+var url="mongodb+srv://teja99:teja99@cluster0.z89l2.mongodb.net/courses?retryWrites=true&w=majority";
 var dbo=""
 
 MongoClient.connect(url,{ useNewUrlParser: true ,useUnifiedTopology: true},function(err,db){
@@ -42,6 +43,32 @@ router.get("/teja",function(req,res){
         res.send(result)
     })
 })
+
+
+//http://localhost:2000/form513/listqueries
+
+router.post("/qdet513",function(req,res){
+    qname=req.body.name
+    qemail=req.body.email
+    qmsg=req.body.msg
+    var query={name:qname,email:qemail,msg:qmsg}
+    dbo.collection("queries_det").insertOne(query,function(err,res){
+        if(err) throw(err)
+        console.log("successfully inserted query from contact form")   
+    });
+    res.send(JSON.stringify("query inserted"))
+    
+});
+
+router.get("/listqueries",function(req,res)
+{
+    console.log("listing queries...")
+    dbo.collection("queries_det").find({}).toArray(function(err,result){
+        res.send(result)
+    })
+})
+
+
 
 module.exports=router
 

@@ -5,9 +5,9 @@
         <h2 class="heading">Contact</h2>
         <address>
             ..........................<br>.................<br>...........<br>
-            <mat-icon aria-hidden="false" aria-label="Example home icon">phone</mat-icon>:9999999999<br>
-            <span class="iconify" data-icon="mdi-whatsapp" data-inline="false" style="font-size:24px;"></span>: 852 8765 4321<br>
-            <mat-icon aria-hidden="false" aria-label="Example home icon">email</mat-icon>:
+            <mat-icon aria-hidden="false" aria-label="Example home icon" style="font-size:20px;">phone</mat-icon>:9999999999<br>
+            <span class="iconify" data-icon="mdi-whatsapp" data-inline="false" style="font-size:20px;"></span>: 852 8765 4321<br>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" style="font-size:20px;">email</mat-icon>:
             <a href="mailto:saisree538@gmaul.com">saisree538@gmail.com</a>
         </address>
 
@@ -18,32 +18,33 @@
         <p routerLink="/hpy">Happiness Program</p>
         <p routerLink="/vtp">VTP</p>
         <p routerLink="/sahaj">Sahaj</p>
+       
 
     </div>
     <div class="cform">
         <h2 class="heading">Query form</h2>
-        <form novalidate #loginForm="ngForm" >
+        <form novalidate #qform="ngForm" (ngSubmit)="onsubmit(name.value,email.value,msg.value,qform)">
             <p>
             <mat-form-field appearance="legacy" style="width: 100%;margin-bottom: -25px;">
                 <mat-label>Name</mat-label>
-                <input matInput placeholder="Name">
+                <input type="text" name="name" matInput placeholder="Name"  #name ngModel autocomplete="off" required>
             </mat-form-field>
             </p>
     
             <p>
             <mat-form-field appearance="legacy" style="width:100%;margin-bottom: -25px;">
                 <mat-label>Email</mat-label>
-                <input matInput placeholder="email">
+                <input type="email" name="email" matInput placeholder="email" #email ngModel autocomplete="off" required>
             </mat-form-field>
             </p>
     
             <p>
             <mat-form-field appearance="legacy" style="width: 100%;margin-bottom: -25px;">
                 <mat-label>message</mat-label>
-                <textarea matInput placeholder="message" matTextareaAutosize matAutosizeMinRows="3" matAutosizeMaxRows="5"></textarea>
+                <textarea type="text" name="msg" matInput placeholder="message" #msg ngModel autocomplete="off" matTextareaAutosize matAutosizeMinRows="3" matAutosizeMaxRows="5" required></textarea>
             </mat-form-field>
             </p>
-            <button mat-raised-button style="background-color:lightseagreen;">Submit</button>
+            <button mat-raised-button style="background-color:#ffae00;" [disabled]="qform.form.invalid" type="submit">Submit</button>
         </form>
 
     </div>

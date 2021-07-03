@@ -2,11 +2,33 @@
     font-family: 'Mulish', sans-serif;
     font-size: 38px;
     padding: 40px;
-  
+    
     line-height: 150%;
-    text-align: center;
+    text-align: center;  
+}
+p{
+    font-family: 'Mulish', sans-serif;
+}
+
+mat-panel-title p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+mat-panel-title b{
+    font-weight: 500;
+}
+
+
+
+mat-card-content b{
+
+    font-weight: 600;
     
 }
+
+
+
 .bg
 {
     background-image:url("../../assets/img1/hpybg1.1.jpg");
@@ -20,7 +42,7 @@
 .bg header{
     color: aliceblue;
     padding: 14px;
-    margin-left: 7%;
+    margin-left: 9%;
     padding-top: 10%;
 }
 .bg header .H1{font-size: 60px;
@@ -59,8 +81,15 @@
     height:500px;
     border: 3px solid black;
 } */
+
+.sec{
+    margin-top: 2%;
+    margin-bottom: 4%;
+   
+}
 .sec1
 {
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -68,8 +97,12 @@
 }
 .sec1 div .imgtxt{
     text-align: center;
-    font-family: 'Sriracha', cursive;
-    font-size: 16px;
+    /* font-family: 'Sriracha', cursive; */
+    /* padding: 3%; */
+    margin-top: 10%;
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px;
+    font-weight:600;
 }
 .three
 {
@@ -125,42 +158,41 @@
 }
 
 .background-primary {
-    background-color:#4cc1bb3a!important;
+    background-color:#ffae00!important;
+    color:white;
 }
 .teacher
 {
-   margin-top: -30px;
+   /* margin-top: 30px; */
     /* border: 3px solid brown; */
+    margin: 0 auto;
+    max-width: 75%;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    justify-content:center;
+    justify-content:space-around;
+    
     
 }
 
 .timg
 {
-    padding: 3%;
-    /* padding-top: 5%;
-    height: 80%;
-    width: 40%;
-    /* padding-bottom: 5px; */
-    /* padding-right: 5px;
-    border-right:2xp solid yellowgreen;
-    border-bottom: 2px solid yellowgreen;  */   
+    padding: 5%;
+    padding-top: 0%;
+      
 }
 .timg img{
-    height:200px;
-    width:200px;
+    height:400px;
+    width:400px;
 }
-.matter{
-    align-self: center;
-}
+
 .matter p{
-    font-size: 16px;
-    padding-top: 5%;
-    width: 450px;
+    font-size: 18px;
+    /* padding-top: 9%; */
+    width: 500px;
+    line-height: 30px;
     text-align: left;
+    
 }
 @media all and (max-width:500)
 {
@@ -183,7 +215,7 @@
 }
 
 .mat-expansion-panel{
-    width: 60%;
+    width: 70%;
     margin: 5px auto;
 }
 @media all and (max-width:768px){
@@ -194,9 +226,15 @@
     
 }
 
+.sec1 img{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px; 
+
+}
+
 .program{
     margin: 0 auto;
-    width: 95%;
+    max-width: 75%;
     background-color:rgba(0, 0, 0, 0.116);
     border-top-left-radius: 80px;
     border-bottom-right-radius: 80px; 
@@ -207,7 +245,6 @@
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;*/
- 
 }
 .row{
     display: flex;

@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
   public i;
 public pag;
 public pag2;
+public harrow=true;
 slides
 slidessmall=[{'image':'../assets/img1/slide1small1.png','text':'The Happiness Program'},
 {'image':'../assets/img1/slide3small1.png','text':'2nd slide'},
@@ -41,6 +42,7 @@ slidessmall=[{'image':'../assets/img1/slide1small1.png','text':'The Happiness Pr
     if(window.innerWidth<320){
       this.pag=100
       this.pag2=80
+      
 this.slides=this.slidessmall
 
     }
@@ -48,23 +50,27 @@ this.slides=this.slidessmall
       this.pag=90
       // this.pag2=70
       this.pag2=80
+      
  this.slides=this.slidessmall
 
     }
     if(window.innerWidth>=375 && window.innerWidth<425){
      this.pag=75
      this.pag2=70
+    
      this.slides=this.slidessmall
     }
     if(window.innerWidth>=425 && window.innerWidth<768){
      this.pag=55
      this.pag2=70
+    
      this.slides=this.slidessmall
 
    } 
    if(window.innerWidth>=768){
      this.pag=50
      this.pag2=37
+     this.harrow=false
      this.slides=this.slidesbig
    }
 

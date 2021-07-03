@@ -6,6 +6,13 @@
     text-align: center;
     
 }
+p{
+    font-family: 'Mulish', sans-serif;
+    
+}
+/* b{
+    font-weight: 500;
+} */
 
 
 .bg
@@ -20,7 +27,7 @@
 .bg header{
     color: aliceblue;
     padding: 14px;
-    margin-left: 7%;
+    margin-left: 9%;
     padding-top: 4%;
 }
 .bg header .H1{
@@ -32,7 +39,7 @@
 .bg header .fancy{
     font-family: 'Caveat';
     font-size: 40px;
-    line-height: 40px;
+    line-height: 50px;
 }
 @media screen and (max-width:320px){
     .bg header{
@@ -53,9 +60,10 @@
 
 .prereq
 {
-    margin-top: 180px;
-    margin-left: 7%;
-    margin-right: 7%;
+    
+    margin:160px 9% 0 9%;
+    /* margin-left: 7%;
+    margin-right: 7%; */
     background-color:rgba(255, 166, 0, 0.288) ;
     padding:2%;
     color:silver
@@ -116,7 +124,8 @@
 
 .bgcolor-primary 
 {
-    background-color:#4cc1bb3a!important;
+    background-color:#ffae00!important;
+    color: white;
 }
 
 .fixedbg
@@ -135,10 +144,20 @@
 
 .imgtext
 {
+   
+
     position: absolute;
-   left: 48%;
+     left: 48%;
   
-    color:brown;
+    color:#4f0105c2;
+}
+
+.imgtext h3{
+    font-family: 'Caveat', cursive;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 2rem;
+
 }
 
 @media all and (max-width:1169px)
@@ -152,6 +171,8 @@
         display: none;
     }
 }
+
+
 
 .teacher
 {

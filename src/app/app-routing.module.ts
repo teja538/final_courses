@@ -18,7 +18,7 @@ const routes: Routes = [
   {path:"vtp",component:VtpComponent},
   {path:"hpy",component:HpyComponent},
   {path:"sahaj",component:SahajComponent},
-  {path:"form",component:InfoformComponent},
+  {path:"form513",component:InfoformComponent},
   {path:"login",component:LoginComponent},
 
 ];

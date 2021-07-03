@@ -9,9 +9,10 @@ import {Icourse1} from '../app/course';
 })
 export class ServedetailsService {
 
-  private url="form"
+  private url="form513"
+  private qurl="form513/qdet513"
   det:Icourse1[]
-  public ex
+  
 
   constructor(private http:HttpClient) { 
    
@@ -28,6 +29,19 @@ export class ServedetailsService {
     console.log(this.http.get<Icourse1[]>(this.url+"/teja"))
     return this.http.get<Icourse1[]>((this.url+"/teja")); 
   }
+
+
+
+  qformdetails(qformdet)
+  {
+    return this.http.post<any>(this.qurl,qformdet)
+  }
+  // getqformdetails()
+  // {
+  //   console.log(this.http.get(this.qurl))
+  //   return this.http.get((this.qurl)); 
+
+  // }
 
   
 

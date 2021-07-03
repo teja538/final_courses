@@ -1,6 +1,7 @@
 
 <div>
-    <mat-toolbar color="primary">
+  
+    <mat-toolbar>
 
         <div fxShow="true" fxHide.gt-sm="true">
             <button  mat-icon-button 
@@ -10,19 +11,21 @@
             </button> 
         </div>
 
-
-        <span>JGD</span>
-        <span class="example-spacer"></span>
-
-        <div fxShow="true" fxHide.lt-md="true">
-            <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-            <a href="home" mat-button>Home</a>
-            <a href="hpy" mat-button>Happiness Program</a> 
-            <a href="sahaj" mat-button>Sahaj</a>
-            <a href="vtp" mat-button>VTP</a> 
-            <a href="#" mat-button>Menu Item 4</a>
+        
             
-        </div>
+            <span style="margin-left: 7%;">JGD</span>
+            <span class="example-spacer"></span>
+            
+            <div fxShow="true" fxHide.lt-md="true" style="margin-right: 7%;">
+                <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+                <a href="home" mat-button>Home</a>
+                <a href="hpy" mat-button>Happiness Program</a> 
+                <a href="sahaj" mat-button>Sahaj</a>
+                <a href="vtp" mat-button>VTP</a> 
+                <a href="#" mat-button>Menu Item 4</a>
+                
+            </div>
+        
     </mat-toolbar>
 
     <mat-sidenav-container fxFlexFill class="example-container">
